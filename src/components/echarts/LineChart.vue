@@ -68,7 +68,6 @@ export default defineComponent({
     )
     onMounted(() => {
       // proxy.$nextTick(() => {
-      console.log(props.lineData, 11)
       xOption.value.series = props.lineData.series
       xOption.value.xAxis.data = props.lineData.xData
       xOption.value.legend.data = props.lineData.legend
@@ -76,9 +75,6 @@ export default defineComponent({
       hEcharts.setOption(xOption.value)
       // })
     })
-    return {
-      xOption
-    }
   }
 })
 </script>
